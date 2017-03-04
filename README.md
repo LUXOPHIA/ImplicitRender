@@ -3,7 +3,7 @@
 陰関数によって定義された曲面を、GPU によってリアルタイムにレンダリングしました。  
 We rendered the curved surface defined by the implicit function in real time on the GPU.
 
-![](https://github.com/LUXOPHIA/ImplicitRender/raw/master/--------/_SCREENSHOT/ImplicitRender.png)
+[![](https://github.com/LUXOPHIA/ImplicitRender/raw/master/--------/_SCREENSHOT/ImplicitRender.png)](https://youtu.be/Dd37rwILqgw)
 > ##MOVIE
 > * [Vimeo](https://vimeo.com/206529398) (original file)
 > * [YouTube](https://youtu.be/Dd37rwILqgw)
