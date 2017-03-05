@@ -36,13 +36,12 @@ type
                 MemoSPC: TMemo;
               TabItemSPE: TTabItem;
                 MemoSPE: TMemo;
-    Panel1: TPanel;
-      ScrollBar1: TScrollBar;
+    Timer1: TTimer;
     procedure FormCreate(Sender: TObject);
     procedure Viewport3D1MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Single);
     procedure Viewport3D1MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Single);
     procedure Viewport3D1MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Single);
-    procedure ScrollBar1Change(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
   private
     { private 宣言 }
     _MouseS :TShiftState;
@@ -185,9 +184,9 @@ end;
 
 //------------------------------------------------------------------------------
 
-procedure TForm1.ScrollBar1Change(Sender: TObject);
+procedure TForm1.Timer1Timer(Sender: TObject);
 begin
-     _MathCube.Material.Phase := Pi4 * ScrollBar1.Value;
+     with _MathCube.Material do Phase := Phase + Pi2 / 100;
 
      Viewport3D1.Repaint;
 end;

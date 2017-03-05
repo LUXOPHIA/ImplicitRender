@@ -3,7 +3,7 @@ object Form1: TForm1
   Top = 0
   Caption = 'ImplicitRender'
   ClientHeight = 666
-  ClientWidth = 960
+  ClientWidth = 840
   Position = ScreenCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -332,29 +332,10 @@ object Form1: TForm1
       end
     end
   end
-  object Panel1: TPanel
-    Align = Right
-    Position.X = 840.000000000000000000
-    Size.Width = 120.000000000000000000
-    Size.Height = 666.000000000000000000
-    Size.PlatformDefault = False
-    StyleLookup = 'pushpanel'
-    TabOrder = 1
-    object ScrollBar1: TScrollBar
-      Align = Center
-      Max = 1.000000000000000000
-      Min = -1.000000000000000000
-      SmallChange = 0.000000000000000000
-      Orientation = Vertical
-      Margins.Left = 10.000000000000000000
-      Margins.Top = 10.000000000000000000
-      Margins.Right = 10.000000000000000000
-      Margins.Bottom = 10.000000000000000000
-      Size.Width = 20.000000000000000000
-      Size.Height = 500.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 0
-      OnChange = ScrollBar1Change
-    end
+  object Timer1: TTimer
+    Interval = 10
+    OnTimer = Timer1Timer
+    Left = 40
+    Top = 61
   end
 end
